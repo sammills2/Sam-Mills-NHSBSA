@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 
 public class BasePage extends BaseTest {
 
-    WebElement GetByID(String ID){
+    WebElement GetPageElement(String ID){
         WebElement webElement = null;
         if (ID.contains("\\")){
             webElement = driver.findElement(By.xpath(ID));
@@ -16,9 +16,7 @@ public class BasePage extends BaseTest {
         }
         return webElement;
     }
-    void Assert(){
 
-    }//TODO
 
     void ClickOn(String ID){
         if (ID.contains("\\")){
@@ -27,8 +25,6 @@ public class BasePage extends BaseTest {
             driver.findElement(By.id(ID)).click();
         }
     }
-    void FindOnPage(){
 
-    }//TODO
 
 }

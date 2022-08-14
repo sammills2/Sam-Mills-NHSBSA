@@ -1,6 +1,8 @@
 package StepDefs;
 
 import PageObjects.Q1WhichCountryDoYouLiveInPageElements;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 
 public class Q1WhichCountryDoYouLiveInStepDefs extends BasePage{
     @And ("^And I select '(.+)' as the country I live in$")
